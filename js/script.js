@@ -7,7 +7,7 @@ var boolzapp = new Vue (
       contacts: [
       	{
       		name: 'Michele',
-      		avatar: '_1',
+      		avatar: 'img/Avatars-1.png',
       		visible: true,
       		messages: [
       			{
@@ -29,7 +29,7 @@ var boolzapp = new Vue (
       	},
       	{
       		name: 'Fabio',
-      		avatar: '_2',
+      		avatar: 'img/Avatars-2.png',
       		visible: true,
       		messages: [
       			{
@@ -51,7 +51,7 @@ var boolzapp = new Vue (
       	},
       	{
       		name: 'Samuele',
-      		avatar: '_3',
+      		avatar: 'img/Avatars-3.png',
       		visible: true,
       		messages: [
       			{
@@ -73,7 +73,7 @@ var boolzapp = new Vue (
       	},
       	{
       		name: 'Luisa',
-      		avatar: '_4',
+      		avatar: 'img/Avatars-4.png',
       		visible: true,
       		messages: [
       			{

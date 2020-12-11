@@ -35,7 +35,10 @@ body {
   width: 65%;
   border: 1px solid black;
 }
-.contacts_area,.text_area {
+.contacts_area, .text_area {
   height: 90%;
   border: 1px solid black;
+}
+img {
+  width: 20px;
 }

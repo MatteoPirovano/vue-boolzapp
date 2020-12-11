@@ -16,6 +16,7 @@
       <div class="contacts_area">
         <ul>
           <li v-for="contact in contacts">
+            <img :src='contact.avatar' alt="avatar">
             {{contact.name}}
           </li>
         </ul>
