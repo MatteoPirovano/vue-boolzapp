@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(0deg, #EDEDED 85%, #00BFA5 15%);
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#root {
+  height: 600px;
+  width: 1000px;
+  display: flex;
+  background-color: #FFFFFF;
+  margin: auto;
+}
+.left {
+  height: 100%;
+  width: 40%;
+  border: 1px solid black;
+}
+.right {
+  height: 100%;
+  width: 60%;
+  border: 1px solid black;
+}
