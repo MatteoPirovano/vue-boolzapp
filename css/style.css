@@ -5,40 +5,128 @@
 }
 body {
     height: 100vh;
+    width: 100%;
     display: flex;
-    background: linear-gradient(0deg, #EDEDED 75%, #00BFA5 25%);
+    background: linear-gradient(0deg, #EDEDED 85%, #00BFA5 15%);
 }
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
+.list_inline {
+  list-style: none;
+  display: inline-block;
+}
 #root {
-  height: 600px;
-  width: 1200px;
+  height: 93%;
+  width: 80%;
   display: flex;
   background-color: #FFFFFF;
   margin: auto;
 }
+/* sinistra----------------------------- */
 .left {
   height: 100%;
   width: 35%;
   border: 1px solid black;
 }
-.nav_left, .nav_right {
-  height: 10%;
+.nav_left {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   border: 1px solid black;
   background-color: #EDEDED;
 }
+.nav_left_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav_left_icons {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav_left_icons > a {
+  color: grey;
+  font-size: 20px;
+}
+.nav_left_profile > p {
+  margin-left: 10px;
+}
+
+.contacts_area {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 175px);
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+.contacts_area > li {
+  height: 40px;
+}
+img {
+  width: 35px;
+}
+.notification {
+  height: 65px;
+  background: lightblue;
+}
+.search {
+  height: 50px;
+  background-color: #EDEDED;
+}
+/* destra----------------------------------- */
 .right {
   height: 100%;
   width: 65%;
   border: 1px solid black;
 }
-.contacts_area, .text_area {
-  height: 90%;
+.nav_right {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #EDEDED;
+}
+.text_area {
+  height: calc(100% - 140px);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0 15px;
+  overflow-y: scroll;
   border: 1px solid black;
 }
-img {
-  width: 20px;
+.sent {
+  min-height: 20px;
+  width: 35%;
+  margin: 5px;
+  padding: 5px;
+  background-color: #DCF8C6;
+  border-radius: 5px;
+}
+.received {
+  min-height: 20px;
+  width: 35%;
+  margin: 5px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 10px;
+  align-self:  flex-start;
+}
+.bottom_right {
+  height: 70px;
+  border: 1px solid black;
+  background-color: #EDEDED;
 }
