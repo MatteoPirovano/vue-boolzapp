@@ -27,12 +27,11 @@
       <div class="notification"></div>
       <div class="search"></div>
       <div class="contacts_area">
-        <ul class="list_inline">
-          <li v-for="(contact, index) in contacts" @click="selectorContact(index)">
-            <img :src='contact.avatar' alt="avatar">
-            <span>{{contact.name}}</span>
-          </li>
-        </ul>
+        <div v-for="(contact, index) in contacts"
+        @click="selectorContact(index)" >
+        <img :src='contact.avatar' alt="avatar">
+        <span>{{contact.name}}</span>
+        </div>
       </div>
     </div>
     <!-- /LEFT-PART -->
@@ -44,14 +43,18 @@
           <span>{{selector.name}}</span>
         </div>
         <div>
-          Lorem ipsum.
+          <div class="nav_right_icons">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-paperclip"></i></a>
+            <a href=""><i class="fas fa-ellipsis-v"></i></a>
+          </div>
         </div>
       </div>
       <div class="text_area">
         <div  v-for="messages in selector.messages" :class="messages.status">{{messages.text}}</div>
       </div>
       <div class="bottom_right">
-        <input type="text" name="message" v-model="newMessage" v-on:keyup.enter="addMessage">
+        <input type="text" name="message" v-model="newMessage" v-on:keyup.enter="addMessage" placeholder="Scrivi un messaggio">
       </div>
     </div>
     <!-- /RIGHT-PART -->
