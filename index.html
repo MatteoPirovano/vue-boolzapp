@@ -50,7 +50,9 @@
       <div class="text_area">
         <div  v-for="messages in selector.messages" :class="messages.status">{{messages.text}}</div>
       </div>
-      <div class="bottom_right"></div>
+      <div class="bottom_right">
+        <input type="text" name="message" v-model="newMessage" v-on:keyup.enter="addMessage">
+      </div>
     </div>
     <!-- /RIGHT-PART -->
   </div>
