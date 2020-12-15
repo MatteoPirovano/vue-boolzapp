@@ -92,13 +92,21 @@ img {
 .notification_bar >p:nth-child(2) {
   color: gray;
   text-decoration: underline;
-
 }
 .search {
-  height: 50px;
+  height: 35px;
+  display: flex;
   background-color: #EDEDED;
 }
-/* destra----------------------------------- */
+.search > input {
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* destra-----------------------------------------*/
 .right {
   height: 100%;
   width: 65%;
@@ -138,9 +146,7 @@ img {
   background-color: #EDEDED;
   border-radius: 10px;
   align-self:  flex-start;
-
 }
-
 .bottom_right {
   height: 60px;
   display: flex;
@@ -149,7 +155,7 @@ img {
   align-items: center;
   background-color: #EDEDED;
 }
-input {
+.bottom_right > input {
   width: 80%;
   height: 35px;
   border-radius: 10px;

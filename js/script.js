@@ -92,7 +92,8 @@ var boolzapp = new Vue (
       	},
       ],
       selector: {},
-      newMessage: ''
+      newMessage: '',
+      searchChatInput:''
     },
     methods: {
       selectorContact: function (indexUser) {
@@ -105,15 +106,19 @@ var boolzapp = new Vue (
         element.status = 'sent';
         this.newMessage = '';
         this.selector.messages.push(element);
-
+        // mini-bot-ok-answer---------------
         var answer= this;
-
         setTimeout( function () {
           var secondElement = {};
           secondElement.text= 'ok';
           secondElement.status = 'received';
           answer.selector.messages.push(secondElement);
         }, 1500 );
+        // mini-bot-ok-answer---------------
+      },
+      searchChat : function () {
+        var 
+        this.searchChatInput= '';
       }
     }
   }
