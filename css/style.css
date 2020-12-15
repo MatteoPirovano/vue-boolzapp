@@ -7,7 +7,7 @@ body {
     height: 100vh;
     width: 100%;
     display: flex;
-    background: linear-gradient(0deg, #EDEDED 85%, #00BFA5 15%);
+    background: linear-gradient(0deg, lightgrey 85%, #00BFA5 15%);
 }
 .clearfix::after {
   content: "";
@@ -25,7 +25,7 @@ body {
 .left {
   height: 100%;
   width: 35%;
-  border: 1px solid black;
+  border-right: 1px solid lightgrey;
 }
 .nav_left {
   display: flex;
@@ -34,7 +34,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid black;
   background-color: #EDEDED;
 }
 .nav_left_profile {
@@ -61,7 +60,6 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  border: 1px solid black;
 }
 .contacts_area > div {
   height: 60px;
@@ -69,6 +67,9 @@ body {
   padding: 10px;
   border-top: 1px  solid lightgrey;
   cursor: pointer;
+}
+.contacts_area > div:hover {
+  background-color: lightgrey;
 }
 .active {
   background-color: #323739;
@@ -78,7 +79,20 @@ img {
 }
 .notification {
   height: 65px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
   background: lightblue;
+}
+.notification > a {
+  color: #FFFFFF;
+  margin-right: 15px;
+  font-size: 30px;
+}
+.notification_bar >p:nth-child(2) {
+  color: gray;
+  text-decoration: underline;
+
 }
 .search {
   height: 50px;
@@ -88,7 +102,6 @@ img {
 .right {
   height: 100%;
   width: 65%;
-  border: 1px solid black;
 }
 .nav_right {
   height: 60px;
@@ -97,7 +110,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid black;
   background-color: #EDEDED;
 }
 .text_area {
@@ -107,7 +119,6 @@ img {
   flex-direction: column;
   padding: 0 15px;
   overflow-y: scroll;
-  border: 1px solid black;
   background-image: url('../img/WhatsApp.jpeg');
   background-repeat: repeat
 }
@@ -136,7 +147,6 @@ img {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
   background-color: #EDEDED;
 }
 input {

@@ -113,7 +113,7 @@ var boolzapp = new Vue (
           secondElement.text= 'ok';
           secondElement.status = 'received';
           answer.selector.messages.push(secondElement);
-        }, 1000 );
+        }, 1500 );
       }
     }
   }
