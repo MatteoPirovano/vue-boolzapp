@@ -49,7 +49,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.nav_left_icons > a, .nav_right_icons > a {
+.nav_left_icons > a, .nav_right_icons > a, .bottom_right > a {
   color: grey;
   font-size: 20px;
 }
@@ -131,16 +131,17 @@ img {
 }
 
 .bottom_right {
-  display: flex;
   height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   border: 1px solid black;
   background-color: #EDEDED;
 }
-input{
+input {
   width: 80%;
   height: 35px;
   border-radius: 10px;
-  margin: auto;
-  justify-content: center;
   padding: 10px;
 }
