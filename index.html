@@ -28,7 +28,7 @@
       <div class="search"></div>
       <div class="contacts_area">
         <ul class="list_inline">
-          <li v-for="contact in contacts">
+          <li v-for="(contact, index) in contacts" @click="selectorContact(index)">
             <img :src='contact.avatar' alt="avatar">
             <span>{{contact.name}}</span>
           </li>
@@ -47,9 +47,7 @@
         </div>
       </div>
       <div class="text_area">
-        <ul>
-          <li></li>
-        </ul>
+        <div  v-for="messages in selector.messages" :class="messages.status">{{messages.text}}</div>
       </div>
       <div class="bottom_right"></div>
     </div>
