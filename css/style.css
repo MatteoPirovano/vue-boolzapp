@@ -93,18 +93,6 @@ img {
   color: gray;
   text-decoration: underline;
 }
-.search {
-  height: 35px;
-  display: flex;
-  background-color: #EDEDED;
-}
-.search > input {
-  width: 80%;
-  height: 30px;
-  margin: auto;
-  border-radius: 10px;
-  padding: 10px;
-}
 
 /* destra-----------------------------------------*/
 .right {

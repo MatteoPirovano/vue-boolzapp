@@ -102,12 +102,13 @@ var boolzapp = new Vue (
       },
       addMessage : function () {
         var element = {};
-        element.text=this.newMessage;
+        element.text= this.newMessage;
         element.status = 'sent';
         this.newMessage = '';
         this.selector.messages.push(element);
-        // mini-bot-ok-answer---------------
-        var answer= this;
+       
+				// mini-bot-ok-answer---------------
+        var answer = this;
         setTimeout( function () {
           var secondElement = {};
           secondElement.text= 'ok';
@@ -115,10 +116,6 @@ var boolzapp = new Vue (
           answer.selector.messages.push(secondElement);
         }, 1500 );
         // mini-bot-ok-answer---------------
-      },
-      searchChat : function () {
-        var 
-        this.searchChatInput= '';
       }
     }
   }
